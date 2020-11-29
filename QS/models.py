@@ -91,44 +91,37 @@ class Player(BasePlayer):
 
     safety1 = models.IntegerField(
         label='If you make a mistake in this company, it is often held against you.',
-        choices=[[1, 'Very inaccurate'], [2, 'Inaccurate'], [3, 'Somewhat inaccurate'], [4, 'Neutral'],
-                 [5, 'Somewhat accurate'], [6, 'Accurate'], [7, 'Very accurate']],
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
         widget=widgets.RadioSelectHorizontal
     )
     safety2 = models.IntegerField(
         label='Members of this company are able to bring up problems and tough issues.',
-        choices=[[1, 'Very inaccurate'], [2, 'Inaccurate'], [3, 'Somewhat inaccurate'], [4, 'Neutral'],
-                 [5, 'Somewhat accurate'], [6, 'Accurate'], [7, 'Very accurate']],
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
         widget=widgets.RadioSelectHorizontal
     )
     safety3 = models.IntegerField(
         label='People in this organization sometimes reject others for being different.',
-        choices=[[1, 'Very inaccurate'], [2, 'Inaccurate'], [3, 'Somewhat inaccurate'], [4, 'Neutral'],
-                 [5, 'Somewhat accurate'], [6, 'Accurate'], [7, 'Very accurate']],
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
         widget=widgets.RadioSelectHorizontal
     )
     safety4 = models.IntegerField(
         label='It is safe to take risks in this company.',
-        choices=[[1, 'Very inaccurate'], [2, 'Inaccurate'], [3, 'Somewhat inaccurate'], [4, 'Neutral'],
-                 [5, 'Somewhat accurate'], [6, 'Accurate'], [7, 'Very accurate']],
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
         widget=widgets.RadioSelectHorizontal
     )
     safety5 = models.IntegerField(
         label='It is difficult to ask other members of this company for help.',
-        choices=[[1, 'Very inaccurate'], [2, 'Inaccurate'], [3, 'Somewhat inaccurate'], [4, 'Neutral'],
-                 [5, 'Somewhat accurate'], [6, 'Accurate'], [7, 'Very accurate']],
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
         widget=widgets.RadioSelectHorizontal
     )
     safety6 = models.IntegerField(
         label='No one in this company would deliberately act in a way that undermines my efforts.',
-        choices=[[1, 'Very inaccurate'], [2, 'Inaccurate'], [3, 'Somewhat inaccurate'], [4, 'Neutral'],
-                 [5, 'Somewhat accurate'], [6, 'Accurate'], [7, 'Very accurate']],
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
         widget=widgets.RadioSelectHorizontal
     )
     safety7 = models.IntegerField(
         label='Working with members of this company, my unique skills and talents are valued and utilized.',
-        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Very accurate']],
-        widget=widgets.RadioSelectHorizontal
+        choices=[[1, 'Very inaccurate'], [2, ''], [3, ''], [4, ''], [5, 'Very accurate']],
     )
     riskimp3 = models.IntegerField(
         label='To what extent did the company put emphasis on the communication of risk information?',
@@ -413,38 +406,6 @@ class Player(BasePlayer):
     perf2 = models.IntegerField(
         label='2.',
         choices=[[1, 'Way below my expectation'], [2, ''], [3, ''], [4, ''], [5, 'Way above my expectation']],
-        widget=widgets.RadioSelectHorizontal
-    )
-    riskav1 = models.IntegerField(
-        label='I prefer to stay on a job that has problems that I know about rather than take the risks of working at '
-              'a new job that has unknown problems even if the new job offers greater rewards.',
-        choices=[[1, 'Strongly disagree'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Strongly agree']],
-        widget=widgets.RadioSelectHorizontal
-    )
-    riskav2 = models.IntegerField(
-        label='I prefer a low risk/high security job with a steady salary over a job that offers high risks and high '
-              'rewards.',
-        choices=[[1, 'Strongly disagree'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Strongly agree']],
-        widget=widgets.RadioSelectHorizontal
-    )
-    riskav3 = models.IntegerField(
-        label='I view risk on a job as a situation to be avoided at all costs.',
-        choices=[[1, 'Strongly disagree'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Strongly agree']],
-        widget=widgets.RadioSelectHorizontal
-    )
-    riskav4 = models.IntegerField(
-        label='I am not willing to take risks when choosing a job or company to work for.',
-        choices=[[1, 'Strongly disagree'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Strongly agree']],
-        widget=widgets.RadioSelectHorizontal
-    )
-    riskav5 = models.IntegerField(
-        label='I am willing to take high financial risks in order to realize higher average yields.',
-        choices=[[1, 'Strongly disagree'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Strongly agree']],
-        widget=widgets.RadioSelectHorizontal
-    )
-    riskav6 = models.IntegerField(
-        label='I like taking big financial risks.',
-        choices=[[1, 'Strongly disagree'], [2, ''], [3, ''], [4, ''], [5, ''], [6, ''], [7, 'Strongly agree']],
         widget=widgets.RadioSelectHorizontal
     )
     riskat1 = models.IntegerField(

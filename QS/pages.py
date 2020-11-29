@@ -149,11 +149,6 @@ class perf(Page):
     def is_displayed(self):
         return self.player.id_in_group in (1, 2)
 
-
-class riskaversion(Page):
-    form_model = 'player'
-    form_fields = ['riskav1', 'riskav2', 'riskav3', 'riskav4', 'riskav5', 'riskav6']
-
 class riskattitude1(Page):
     form_model = 'player'
     form_fields = ['riskat1', 'riskat2', 'riskat3', 'riskat4', 'riskat5', 'riskat6']
@@ -241,7 +236,7 @@ class reportqual2(Page):
 
 
 page_sequence = [expectancy1, expectancy2, riskperception1, riskperception2, riskimpexexp, allocationfactor1,
-                 allocationfactor2, responsibility, perf, riskimportpostexp, reportimp, factor1, factor2, riskaversion, reportqual1,
+                 allocationfactor2, responsibility, perf, riskimportpostexp, reportimp, factor1, factor2, reportqual1,
                  reportqual2, reportquality, orgtrust, suptrust,
                  emergencyfactor, supimpress1, supimpress2, riskattitude1, riskattitude2,
                  mansafetycheck, manvoluntarycheck, pclosure1, pclosure2,
